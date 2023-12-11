@@ -1,0 +1,13 @@
+// Array Utilities
+// @author: bbwanjia
+
+
+FUNCTION sum(array : ARRAY OF REAL) RETURNS REAL
+  CONSTANT len = LENGTH(array)
+  DECALRE s : REAL
+  s <- 0
+  FOR i <- 1 TO len
+   s <- s + array[i]
+  NEXT i
+  RETURN s 
+ENDFUNCTION
